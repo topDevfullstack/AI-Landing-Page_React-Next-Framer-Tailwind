@@ -13,7 +13,7 @@ export const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  };       
 
   return (
     <header className="py-4 border-b  border-white/15   md:border-none sticky top-0 z-10">
