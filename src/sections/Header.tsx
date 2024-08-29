@@ -23,8 +23,8 @@ export const Header = () => {
         <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
             <div className=" h-10 w-10 rounded-lg ml-12 flex justify-center items-center ">
-              <Image src={LogoIcon} alt="logo" className="h-10 w-10" />
-              <h1 className="text-white font-semibold text-xl">Codevertex</h1>
+              <Image src={LogoIcon} alt="logo" className="h-10 w-10 border border-white/25 rounded-lg " />
+              {/* <h1 className="text-white font-semibold text-xl">Codevertex</h1> */}
             </div>
           </div>
           <div className="hidden md:block">
@@ -32,8 +32,8 @@ export const Header = () => {
               <a href="#" className="text-white/70 hover:text-white transition">Home</a>
               <a href="#" className="text-white/70 hover:text-white transition">Courses</a>
               <a href="#" className="text-white/70 hover:text-white transition">Internship</a>
-              <a href="#" className="text-white/70 hover:text-white transition">Articles</a>
-              <a href="#" className="text-white/70 hover:text-white transition">Toturials</a>
+              <a href="#" className="text-white/70 hover:text-white transition">About Us</a>
+              <a href="#" className="text-white/70 hover:text-white transition">Tutorials</a>
               <a href="#" className="text-white/70 hover:text-white transition">Contact</a>
             </nav>
           </div>
