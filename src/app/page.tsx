@@ -1,21 +1,21 @@
-import { CallToAction } from "@/sections/CallToAction";
-import { Features } from "@/sections/Features";
-import  Footer  from "@/sections/Footer";
+"use client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "@/sections/Footer";
 import { Header } from "@/sections/Header";
-import { Hero } from "@/sections/Hero";
-import { LogoTicker } from "@/sections/LogoTicker";
-import { Testimonials } from "@/sections/Testimonials";
+import { Home } from "@/pages/Home";
 
-export default function Home() {
+export default function page() {
   return (
-    <>
-    <Header />
-    <Hero />
-    <LogoTicker />
-    <Features />
-    <Testimonials />
-    <CallToAction />
-    <Footer />
-    </>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/features" element={<Features />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/call-to-action" element={<CallToAction />} />
+        <Route path="/logo-ticker" element={<LogoTicker />} /> */}
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
