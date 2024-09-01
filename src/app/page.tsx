@@ -13,7 +13,7 @@ export default function Page() {
     const fetchData = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 100);
+      }, 4000);
     };
     fetchData();
   }, []);
