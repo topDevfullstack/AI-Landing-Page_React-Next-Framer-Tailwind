@@ -7,7 +7,7 @@ import '../App.css'
 const UnlockCode = () => {
 
   const heading = (
-    <div className="text-4xl font-semibold w-11/12 max-w-maxContent ">
+    <div className="lg:text-4xl text-3xl md:text-3xl font-semibold w-11/12 max-w-maxContent ">
       Unlock your
       <HighlightText text={"coding potential"} /> with our online courses.
     </div>
@@ -37,19 +37,19 @@ const UnlockCode = () => {
     <div className="codeblock1 absolute"></div>
   );
 
-  const codeColor = "text-yellow-4400";
+  const codeColor = "text-white";
 
   return (
 
-    <div className='flex justify-center items-center w-full  md:px-44 px-20'>
+    <div className='flex  justify-center items-center w-full  lg:px-44 md:px-12 px-5 md:mt-24 mt-10'>
     <div className='w-11/12 max-w-maxContent '>
       <div className={`flex lg:flex-row my-20 justify-between flex-col lg:gap-10 gap-10 `}>
         <div className="w-[100%] lg:w-[50%] flex flex-col gap-8">
           {heading}
-          <div className="text-richblack-300 text-base font-bold w-[85%] -mt-3">
+          <div className="text-gray-300 text-base font-bold w-[85%] -mt-3">
             {subheading}
           </div>
-          <div className="flex gap-7 mt-7">
+          <div className="flex flex-wrap gap-7 mt-7">
             <Button>
               <div className="flex items-center gap-2">
                 {ctabtn1.btnText}
@@ -63,7 +63,7 @@ const UnlockCode = () => {
         </div>
         <div className="h-fit code-border flex flex-row py-3 text-[10px] sm:text-sm leading-[18px] sm:leading-6 relative w-[100%] lg:w-[470px]">
           {backgroundGradient}
-          <div className="text-center flex flex-col   w-[10%] select-none text-richblack-400 font-inter font-bold ">
+          <div className="text-center flex flex-col   w-[10%] select-none text-gray-400 font-inter font-bold ">
             <p>1</p>
             <p>2</p>
             <p>3</p>
@@ -99,7 +99,7 @@ const UnlockCode = () => {
 
 const HighlightText = ({text}:any) => {
   return (
-    <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold">
+    <span className="bg-[radial-gradient(74%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_75%,transparent)] bg-[rgb(14,0,36,.5)]  text-transparent bg-clip-text font-bold">
       {" "}
       {text}
     </span>

@@ -42,9 +42,9 @@ export const Header = () => {
         >
           <div className="flex items-center">
             <div
-              className={` rounded-lg mr-2 flex justify-center items-center ${
-                scrolled ? "mr-0 h-8 w-8" : "h-10 w-10"
-              } transition-all duration-500`}
+              className={` rounded-lg  flex justify-center items-center ${
+                scrolled ? "mr-0 h-8 w-8" : "h-10 w-10 mr-2"
+              } transition-all ease-linear duration-700 `}
             >
               <Image
                 src={LogoIcon}
@@ -53,7 +53,7 @@ export const Header = () => {
               />
             </div>
             {!scrolled && (
-              <h1 className="text-white font-semibold text-xl mr-1 transition-all duration-200">
+              <h1 className="text-white font-semibold text-xl mr-1 transition-all ease-linear duration-600">
                 Codevertex
               </h1>
             )}
@@ -98,13 +98,13 @@ export const Header = () => {
             initial={{ y: "30%" }}
             animate={{ y: "1%" }}
             transition={{ duration: 0.8 }}
-            className=" fixed top-16 w-full h-auto mt-4 py-4    rounded-lg z-40 flex flex-col items-center justify-center backdrop-blur-md    bg-[radial-gradient(74%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(0,0,0)_75%,transparent)]"
+            className=" fixed top-16 w-full h-auto mt-4 py-4 opacity-85   rounded-lg z-40 flex flex-col items-center justify-center backdrop-blur-md    bg-[radial-gradient(rgb(0,0,0)_65%,rgb(0,0,0)_75%,transparent)]"
           >
-            <ul className="flex flex-col  gap-6 text-center">
+            <ul className="flex flex-col  gap-6 text-center w-full p-4">
               {NavbarLinks.map((link, index) => (
                 <li
                   key={index}
-                  className=" transition duration-300 rounded-lg py-2 px-4 hover:bg-black "
+                  className=" transition duration-300 rounded-lg py-2 px-4 hover:bg-[rgb(74,32,138,.5)] "
                 >
                   <Link
                     key={link.path}
