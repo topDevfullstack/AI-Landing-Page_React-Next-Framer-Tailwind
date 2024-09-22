@@ -28,6 +28,7 @@ const useRelativeMousePosition = (to: RefObject<HTMLElement>) => {
     return () => {
       window.removeEventListener("mousemove", updateMousePosition);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [mouseX, mouseY];

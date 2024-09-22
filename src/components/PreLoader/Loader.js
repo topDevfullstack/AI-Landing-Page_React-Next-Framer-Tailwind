@@ -13,7 +13,7 @@ const Loader = () => {
         />
       </div>
       <h1 className="text-white font-semibold text-xl mr-1 transition-all ease-linear duration-600">
-        Codevertex
+        Mishal Aslam
       </h1>
     </div>
   )

@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
             <div className=" h-10 w-10 rounded-lg ml-12 flex justify-center items-center ">
               <Image src={Logo} alt="logo" className="h-10 w-10" />
-              <h1 className="text-white font-semibold text-xl">Codevertex</h1>
+              <h1 className="text-white font-semibold text-xl">Mishal Aslam</h1>
             </div>
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Company
@@ -197,7 +197,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center">
-            Made with ❤️ by CodeVertex © 2024 
+            Made with ❤️ by Mishal Aslam © 2024 
           </div>
         </div>
       </div>

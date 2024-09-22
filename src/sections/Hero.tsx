@@ -89,7 +89,7 @@ const backgroundPositionY = useTransform(scrollYProgress , [0,1] , [-300, 300])
 
       <div className="container relative mt-16 ">
         <h1 className="text-8xl md:text-[168px] md:leading-none font-semibold tracking-tighter bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] bg-white text-transparent bg-clip-text text-center">
-          Ai SEO.
+          10 lorem
         </h1>
         <p className="text-lg md:text-xl max-w-xl mx-auto text-white/70 mt-5 text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque id
