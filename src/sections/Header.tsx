@@ -54,7 +54,7 @@ export const Header = () => {
             </div>
             {!scrolled && (
               <h1 className="text-white font-semibold text-xl mr-1 transition-all ease-linear duration-600">
-                Mishal Aslam
+                Codevertex
               </h1>
             )}
           </div>
